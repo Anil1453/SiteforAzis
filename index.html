@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Азис - Официален Сайт</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("back2.jpg") center center / cover no-repeat fixed;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffd700;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff69b4;
+    }
+
+    #hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/azis-banner.jpg') center/cover no-repeat;
+      padding: 120px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    #hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff85c1;
+    }
+
+    footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 20px;
+      box-shadow: 0 -4px 6px rgba(0,0,0,0.5);
+    }
+    #music {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#music h2 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 30px;
+}
+
+.music-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.music-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.music-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.music-item h3 {
+  font-size: 1.8rem;
+  color: #f39c12;
+  margin: 10px 0;
+}
+
+.music-item p {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.btn-music {
+  background-color: #c7a13a;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.btn-music:hover {
+  background-color: #ff85c1;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Азисиус</h1>
+    <nav>
+      <ul>
+        <li><a href="#bio">Биография</a></li>
+        <li><a href="#music">Музика</a></li>
+        <li><a href="#gallery">Галерия</a></li>
+        <li><a href="#contact">Контакт</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Кралят на поп-фолка</h2>
+    <p>Официален уебсайт на Азис – артистът, който промени музикалната сцена в България.</p>
+  </section>
+
+  <section id="bio">
+    <h2>Биография</h2>
+    <p>Азис, роден като Васил Троянов Боянов, е емблематична фигура в българската музика. Роден на 7 март 1978 г. в Сливен, той е известен със своята артистичност, провокации и уникален стил. Превърнал се в символ на свободата на изразяване, Азис не се страхува да нарушава граници и да вдъхновява хората със своето творчество.</p>
+    <p>През годините е издал множество хитове, които се пеят не само в България, но и в Турция, Сърбия, Гърция и други страни от Балканите.</p>
+  </section>
+
+  <section id="music">
+    <h2>Музика</h2>
+    <div class="music-gallery">
+      <div class="music-item">
+        <img src="habibi.jpg" alt="Хабиби" class="music-img">
+        <h3>"Хабиби"</h3>
+        <p>Един от най-гледаните клипове на Азис в YouTube.</p>
+        <a href="https://www.youtube.com/watch?v=XXXXX" target="_blank" class="btn-music">Гледай в YouTube</a>
+      </div>
+      <div class="music-item">
+        <img src="motel.jpg" alt="Мотел" class="music-img">
+        <h3>"Мотел"</h3>
+        <p>Романтичен дует с Цветелина Янева.</p>
+        <a href="https://www.youtube.com/watch?v=XXXXX" target="_blank" class="btn-music">Гледай в YouTube</a>
+      </div>
+      <div class="music-item">
+        <img src="Ledenakralica.jpg" alt="Ledenakralica" class="music-img">
+        <h3>"Ledenakralica"</h3>
+        <p>Провокативно и запомнящо се изпълнение.</p>
+        <a href="https://www.youtube.com/watch?v=XXXXX" target="_blank" class="btn-music">Гледай в YouTube</a>
+      </div>
+      <div class="music-item">
+        <img src="sentrope.jpg" alt="Сен Тропе" class="music-img">
+        <h3>"Сен Тропе"</h3>
+        <p>Лятно настроение и екзотичен ритъм.</p>
+        <a href="https://www.youtube.com/watch?v=XXXXX" target="_blank" class="btn-music">Гледай в YouTube</a>
+      </div>
+      <div class="music-item">
+        <img src="evala.jpg" alt="Evala" class="music-img">
+        <h3>"Evala" (ft. Галин)</h3>
+        <p>Новото лице на модерния поп-фолк.</p>
+        <a href="https://www.youtube.com/watch?v=XXXXX" target="_blank" class="btn-music">Гледай в YouTube</a>
+      </div>
+      <div class="music-item">
+        <img src="mma.jpg" alt="Mma" class="music-img">
+        <h3>"Mma"</h3>
+        <p>Провокативно и запомнящо се изпълнение.</p>
+        <a href="https://www.youtube.com/watch?v=XXXXX" target="_blank" class="btn-music">Гледай в YouTube</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="gallery">
+    <h2>Галерия</h2>
+    <div class="gallery">
+      <img src="Azisalbum.jpg" alt="Азис на сцена">
+      <img src="Azis.webp" alt="Азис - фотосесия">
+      <img src="Aziskoncert.jpg" alt="Азис - концерт">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Контакт</h2>
+    <form>
+      <label for="name">Име:</label>
+      <input type="text" id="name" name="name" placeholder="Вашето име" required>
+
+      <label for="email">Имейл:</label>
+      <input type="email" id="email" name="email" placeholder="Вашият имейл" required>
+
+      <label for="message">Съобщение:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Вашето съобщение..." required></textarea>
+
+      <button type="submit">Изпрати</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Азис. Всички права запазени.</p>
+    <p>Следвай Азис в <a href="https://www.instagram.com/azis_online" target="_blank" style="color:#ffd700;">Instagram</a> и <a href="https://www.facebook.com/azisnet" target="_blank" style="color:#ffd700;">Facebook</a></p>
+  </footer>
+</body>
+
+</html>
